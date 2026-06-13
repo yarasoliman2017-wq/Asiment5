@@ -1,22 +1,13 @@
-<!doctype html>
 <html lang="ar" dir="rtl">
   <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>مدبّر | إدارة أموالك بذكاء</title>
 
     <!-- FONT AWESOME -->
 
     <link rel="stylesheet" href="./icon/css/all.min.css" />
-
-    <!-- BOOTSTRAP -->
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300..900&family=Archivo+Black&family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
 
@@ -26,23 +17,21 @@
   <body>
     <!-- MAIN LAYOUT -->
 
-    <div class="d-flex">
+    <div class="main-layout ">
       <!-- SIDEBAR -->
 
-      <aside class="sidebar bg-white p-4 vh-100 overflow-auto">
+      <div class="sidebar ">
         <!-- LOGO -->
 
-        <div class="d-flex align-items-center gap-3 p-2 mb-3">
+        <div class=" side-logo ">
           <div
-            class="logo-icon bg-primary text-white shadow p-3 bg-body-primary rounded p-3 rounded-4 d-flex justify-content-center align-items-center"
-          >
+            class="logo-icon">
             <i class="fa-solid fa-coins"></i>
           </div>
 
           <div>
-            <h4 class="fw-bold fs-4 m-0">مدبّر</h4>
-
-            <small> إدارة أموالك بذكاء </small>
+            <h4 class=" bold ">مدبّر</h4>
+            <small class="light"> إدارة أموالك بذكاء </small>
           </div>
         </div>
 
@@ -50,9 +39,8 @@
 
         <ul class="list-unstyled">
           <li
-            class="menu-item active p-2 bg-info bg-opacity-10 border border-info border-start-0 rounded-end"
-          >
-            <i class="fa-solid fa-house text-primary"></i>
+            class="menu-item active" >
+            <i class="fa-solid fa-house "></i>
 
             <span> الصفحة الرئيسية </span>
           </li>
@@ -75,7 +63,7 @@
             <span> المدخرات </span>
           </li>
 
-          <li class="menu-item">
+          <li class="menu-item ">
             <i class="fa-solid fa-file-invoice-dollar"></i>
 
             <span> الفواتير الشهرية </span>
@@ -84,62 +72,70 @@
 
         <!-- QUICK ACTION -->
 
-        <h6 class="text-muted mt-5 mb-4">إجراءات سريعة</h6>
+        <h6 class="text-muted ">إجراءات سريعة</h6>
 
         <ul class="list-unstyled">
-          <li class="menu-item">
-            <i class="fa-solid fa-paper-plane"></i>
+            <li class="menu-item space">
+              <div class="icon-border blue">
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+              
+                <span> إرسال أموال </span>
+             
+            </li>
+          
 
-            <span> إرسال أموال </span>
-          </li>
-
-          <li class="menu-item">
-            <i class="fa-solid fa-plus"></i>
+          <li class="menu-item space">
+            <div class="icon-border green">
+              <i class="fa-solid fa-plus"></i>
+            </div>
 
             <span> إضافة أموال </span>
           </li>
 
-          <li class="menu-item">
-            <i class="fa-solid fa-receipt"></i>
+          <li class="menu-item space">
+            <div class="icon-border purbel">
+              <i class="fa-solid fa-receipt"></i>
+            </div>
 
             <span> دفع فاتورة </span>
           </li>
 
-          <li class="menu-item">
-            <i class="fa-solid fa-chart-line"></i>
+          <li class="menu-item space">
+            <div class="icon-border orange">   
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
 
             <span> استثمار </span>
           </li>
         </ul>
-      </aside>
+      </div>
     </div>
     <!-- CONTENT -->
 
-    <div class="content ">
+     <div class="content">
       <!-- TOP NAVBAR -->
 
       <div
-        class="top-navbar d-flex justify-content-between align-items-center p-3 mb-4 rounded-4 border bg-light-subtle bg-gradient-5"
+        class="top-navbar"
       >
         <!-- RIGHT -->
 
-        <div class="d-flex align-items-center gap-3">
-          <div
-            class="logo-icon bg-primary text-white p-3 rounded-4 d-flex justify-content-center align-items-center shadow p-3 bg-body-primary rounded"
-          >
+        <div class=" top-right ">
+          <div class="logo-icon">
             <i class="fa-solid fa-coins"></i>
           </div>
 
           <div>
-            <h4 class="fw-bold fs-4 m-0">مدبّر</h4>
+            <h4 class="bold">مدبّر</h4>
 
-            <small class="text-muted"> إدارة أموالك بذكاء </small>
+            <small class="light"> إدارة أموالك بذكاء </small>
           </div>
 
           <div
-            class="px-3 py-2 bg-success-subtle border border-success rounded-pill"
+            class="online"
           >
-            <i class="fa-solid fa-circle fs-6 text-success"></i>
+            <i class="fa-solid fa-circle"></i>
 
             <small> متصل </small>
           </div>
@@ -147,16 +143,16 @@
 
         <!-- LEFT -->
 
-        <div class="d-flex align-items-center gap-3">
+        <div class=" top-left">
           <!-- SEARCH -->
 
-          <div class="icon-box border p-2 rounded-3">
+          <div class="icon-box">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
 
           <!-- BELL -->
 
-          <div class="icon-box border p-2 rounded-3 position-relative">
+          <div class="icon-box bell">
             <i class="fa-regular fa-bell"></i>
 
             <span class="notification-badge"> 2 </span>
@@ -165,10 +161,9 @@
           <!-- PROFILE -->
 
           <div
-            class="d-flex align-items-center gap-2 border rounded-4 p-2 bg-white"
-          >
+            class=" portfile">
             <div>
-              <p class="m-0 fw-bold">سيف أسامة</p>
+              <p >سيف أسامة</p>
 
               <small class="text-muted"> حساب مميز </small>
             </div>
@@ -180,16 +175,17 @@
 
       <!-- CARDS -->
 
-      <div class="row g-3">
+      <div class=" container">
         <!-- CARD -->
+         <div class="cards-grid">
 
-        <div class="col-md-4">
-          <div class="bg-white border rounded-4 p-4">
+        <div class=" box ">
+          <div class="main-box">
             <span class="text-muted"> الرصيد الحالي </span>
 
-            <h3 class="fw-bold mt-3">8,450 جنيه</h3>
+            <h3 class="text-bold ">8,450 جنيه</h3>
 
-            <small class="text-success">
+            <small class="text-green">
               <i class="fa-solid fa-arrow-up"></i>
 
               +2.5%
@@ -199,13 +195,13 @@
 
         <!-- CARD -->
 
-        <div class="col-md-4">
-          <div class="bg-white border rounded-4 p-4">
+        <div class=" box">
+          <div class="main-box">
             <span class="text-muted"> الدخل الشهري </span>
 
-            <h3 class="fw-bold mt-3">15,200 جنيه</h3>
+            <h3 class="text-bold">15,200 جنيه</h3>
 
-            <small class="text-success">
+            <small class="text-green">
               <i class="fa-solid fa-arrow-up"></i>
 
               +4.2%
@@ -215,13 +211,13 @@
 
         <!-- CARD -->
 
-        <div class="col-md-4">
-          <div class="bg-white border rounded-4 p-4">
+        <div class=" box">
+          <div class="main-box">
             <span class="text-muted"> المصروفات </span>
 
-            <h3 class="fw-bold mt-3">6,120 جنيه</h3>
+            <h3 class="text-bold">6,120 جنيه</h3>
 
-            <small class="text-danger">
+            <small class="text-red">
               <i class="fa-solid fa-arrow-down"></i>
 
               -1.8%
@@ -229,26 +225,28 @@
           </div>
         </div>
       </div>
+    </div>
+  
       <!-- ====== MAIN SECTION ====== -->
-
-      <div class="dashboard-grid">
+      
+      <div class="container">
+      <div class=" dashboard-grid">
         <!-- RIGHT SIDE -->
 
         <div class="right-side">
           <!-- ACTIVITIES -->
 
           <div class="activity-card">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <h5 class="section-title m-0">الأنشطة الحديثة</h5>
+            <div class="section-title">
+              <h5 >الأنشطة الحديثة</h5>
             </div>
 
             <!-- ITEM 1 -->
 
             <div
-              class="activity-item bg-primary-subtle p-3 border-bottom-0 border-end-0 border-top-0 border border-primary border border-4"
-            >
-              <div class="icon-box">
-                <i class="fa-solid fa-user-plus"></i>
+              class="activity-item blue1 ">
+              <div class="icon-box b">
+                <i class="fa-solid fa-user-plus bl"></i>
               </div>
 
               <div class="text">
@@ -259,18 +257,16 @@
                 <small> منذ ساعة واحدة </small>
               </div>
 
-              <div class="tag">
-                <span class="bg-primary-subtle text-primary"> حساب </span>
+              <div class="tag bl">
+                <span> حساب </span>
               </div>
             </div>
 
             <!-- ITEM 2 -->
 
-            <div
-              class="activity-item border border-success border border-4 bg-success-subtle p-3 border-bottom-0 border-end-0 border-top-0"
-            >
-              <div class="icon-box text-success">
-                <i class="fa-solid fa-credit-card"></i>
+            <div class="activity-item green1 ">
+              <div class="icon-box g ">
+                <i class="fa-solid fa-credit-card gr"></i>
               </div>
 
               <div class="text">
@@ -281,13 +277,15 @@
                 <small> منذ 3 ساعات </small>
               </div>
 
-              <div class="tag">
-                <span class="bg-success-subtle text-success"> بطاقة </span>
+              <div class="tag gr">
+                <span> بطاقة </span>
               </div>
             </div>
+
+
             <hr />
-            <div class="justify-content-center text-center">
-              <a href="#" class="text-decoration-none">
+            <div class=" text-end">
+              <a href="#" class=" end ">
                 عرض جميع الأنشطة (23)
               </a>
               <!-- ITEM 3 -->
@@ -296,58 +294,55 @@
 
           <!-- BILLS -->
 
-          <div class="bg-white border rounded-4 p-3">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-              <h5 class="fw-bold m-0">الفواتير الشهرية</h5>
+          <div class=" bills">
+            <div class="reseet">
+              <h5 class="monuse">الفواتير الشهرية</h5>
 
-              <a href="#" class="text-decoration-none"> عرض الكل </a>
+              <a href="#" class="end two"> عرض الكل ></a>
             </div>
+<div class="text2">
+            <h2 >1920 جنيه</h2>
 
-            <h2 class="fw-bold text-center">1920 جنيه</h2>
-
-            <p class="text-muted text-center">إجمالي الفواتير الشهرية</p>
-
+            <p class="text-muted">إجمالي الفواتير الشهرية</p>
+</div>
             <div class="bills-grid">
-              <div class="bill-item d-flex flex-column">
-                <i class="fa-solid fa-wifi border bg-primary-subtle m-auto"></i>
+              <div class="bill-item">
+                <i class="bill-icon blue fa-solid fa-wifi"></i>
 
-                <h6>إنترنت</h6>
+                <h6 class="light">إنترنت</h6>
 
-                <span class="fs-4 fw-bold"> 450 جنيه </span>
-                <p class="text-danger">يستحق في 3 أيام</p>
+                <span class="text3"> 450 جنيه </span>
+                <p class="text-red">يستحق في 3 أيام</p>
               </div>
 
               <div class="bill-item">
                 <i
-                  class="fa-solid fa-bolt border text-warning-emphasis bg-warning-subtle"
+                  class=" bill-icon brwon fa-solid fa-bolt"></i>
+
+                <h6 class="light">كهرباء</h6>
+
+                <span class="text3"> 400 جنيه </span>
+                <p class="text-orange">يستحق في 5 أيام</p>
+              </div>
+
+              <div class="bill-item">
+                <i class=" bill-icon green fa-solid fa-phone"
                 ></i>
 
-                <h6>كهرباء</h6>
+                <h6 class="light">هاتف</h6>
 
-                <span class="fs-4 fw-bold"> 400 جنيه </span>
-                <p class="text-warning">يستحق في 5 أيام</p>
+                <span class="text3"> 290 جنيه </span>
+                <p class="text-green">يستحق في 10 أيام</p>
               </div>
 
               <div class="bill-item">
                 <i
-                  class="fa-solid fa-phone border text-success bg-success-subtle"
-                ></i>
+                  class=" bill-icon red fa-solid fa-tv"></i>
 
-                <h6>هاتف</h6>
+                <h6 class="light">Netflix</h6>
 
-                <span class="fs-4 fw-bold"> 290 جنيه </span>
-                <p class="text-success">يستحق في 10 أيام</p>
-              </div>
-
-              <div class="bill-item">
-                <i
-                  class="fa-solid fa-tv border text-danger bg-danger-subtle"
-                ></i>
-
-                <h6 class="text-secondary">Netflix</h6>
-
-                <span class="fs-4 fw-bold"> 780 جنيه </span>
-                <p class="text-secondary">يستحق في 10 أيام</p>
+                <span class="text3"> 780 جنيه </span>
+                <p class="text-light">يستحق في 10 أيام</p>
               </div>
             </div>
           </div>
@@ -356,13 +351,13 @@
         <!-- LEFT SIDE -->
 
         <div class="left-side ">
-          <div class="bg-white border rounded-4 p-4">
+          <div class=" big-side">
             <!-- HEADER -->
 
-            <div class="d-flex justify-content-between align-items-center mb-1">
-              <h4 class="fw-bold m-0">المعاملات الأخيرة</h4>
+            <div class=" heder">
+              <h4 class="text">المعاملات الأخيرة</h4>
 
-              <a href="#" class="text-decoration-none"> عرض الكل </a>
+              <a href="#" class="end two "> عرض الكل ></a>
             </div>
 
             <!-- TABLE -->
@@ -388,19 +383,20 @@
 
                   <tr>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class=" table-info">
                         <img src="imgs/avatar-3.jpg" class="table-img" />
 
                         <div>
-                          <h6 class="m-0">محمود النجار</h6>
+                          <h6 class="text3">محمود النجار</h6>
 
-                          <small class="text-muted"> تحويل أموال </small>
+                          <small class="text-muted ligh"> تحويل أموال </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
+                        <i class="fa-solid fa-arrow-down"></i>
                         دخل
                       </span>
                     </td>
@@ -408,33 +404,32 @@
                     <td>14 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="text-success fw-bold">+350 جنيه</td>
+                    <td class="gr">+350 جنيه</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="icon d-flex align-items-center gap-3">
+                      <div class="icon  table-info ">
                         <i
-                          class="fa-solid fa-utensils border bg-danger-subtle text-danger p-3"
-                        ></i>
+                          class=" fa-solid fa-utensils orange"></i>
 
                         <div>
-                          <h6 class="m-0">مطعم Meat moot</h6>
+                          <h6 class="text3">مطعم Meat moot</h6>
 
-                          <small class="text-muted"> دفع مطعم </small>
+                          <small class="text-muted ligh"> دفع مطعم </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-danger-subtle text-danger p-2">
+                      <span class="badg orange-b ">
                         <i class="fa-solid fa-utensils"></i> تسوق
                       </span>
                     </td>
@@ -442,33 +437,33 @@
                     <td>14 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="fw-bold">-2200 جنية</td>
+                    <td class="text4">-2200 جنية</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="icon d-flex align-items-center gap-3">
+                      <div class="icon table-info ">
                         <i
-                          class="fa-solid fa-cart-shopping border bg-primary-subtle text-primary p-3"
+                          class="fa-solid fa-cart-shopping blue"
                         ></i>
 
                         <div>
-                          <h6 class="m-0">مطعم Meat moot</h6>
+                          <h6 class="text3">مطعم Meat moot</h6>
 
-                          <small class="text-muted"> دفع مطعم </small>
+                          <small class="text-muted ligh"> دفع مطعم </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-primary-subtle text-primary p-2">
+                      <span class="badg blue">
                         <i class="fa-solid fa-cart-shopping"></i> تسوق
                       </span>
                     </td>
@@ -476,31 +471,31 @@
                     <td>13 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="fw-bold">-1250 جنيه</td>
+                    <td class="text4">-1250 جنيه</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class=" table-info">
                         <img src="imgs/avatar-1.jpg" class="table-img" />
 
                         <div>
-                          <h6 class="m-0">عمر المهدي</h6>
+                          <h6 class="text3">عمر المهدي</h6>
 
-                          <small class="text-muted"> دفع فاتورة مقسمة </small>
+                          <small class="text-muted ligh"> دفع فاتورة مقسمة </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-danger-subtle text-danger p-2">
+                      <span class="badg purble ">
                         <i class="fa-solid fa-users"></i> فاتورة مقسمة
                       </span>
                     </td>
@@ -508,31 +503,31 @@
                     <td>13 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="fw-bold">-1400 جنية</td>
+                    <td class="text4">-1400 جنية</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="d-flex align-items-center gap-3">
+                      <div class=" table-info ">
                         <img src="imgs/avatar-2.jpg" class="table-img" />
 
                         <div>
-                          <h6 class="m-0">محمد عوض</h6>
+                          <h6 class="text3">محمد عوض</h6>
 
-                          <small class="text-muted"> دفع عمل حر </small>
+                          <small class="text-muted ligh"> دفع عمل حر </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-danger-subtle text-danger p-2">
+                      <span class="badg down">
                         <i class="fa-solid fa-briefcase"></i> عمل
                       </span>
                     </td>
@@ -540,101 +535,98 @@
                     <td>12 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="text-success fw-bold">+2500 جنية</td>
+                    <td class="gr">+2500 جنية</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="icon d-flex align-items-center gap-3">
+                      <div class="icon table-info ">
                         <i
-                          class="fa-solid fa-gas-pump border bg-danger-subtle text-danger p-3"
-                        ></i>
+                          class="fa-solid fa-gas-pump red-b "></i>
 
                         <div>
-                          <h6 class="m-0">محطة وقود Shell</h6>
+                          <h6 class="text3">محطة وقود Shell</h6>
 
-                          <small class="text-muted"> شراء وقود </small>
+                          <small class="text-muted ligh"> شراء وقود </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-primary-subtle text-primary p-2">
-                        <i class="fa-solid fa-car"></i> مواصلات
+                      <span class="badg  red">
+                        <i class="fa-solid fa-car "></i> مواصلات
                       </span>
                     </td>
 
                     <td>12 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-warning-subtle text-warning p-2">
+                      <span class="badg brwon">
                         معلق
                       </span>
                     </td>
 
-                    <td class="fw-bold">-700 جنية</td>
+                    <td class="text4">-700 جنية</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="icon d-flex align-items-center gap-3">
-                        <i
-                          class="fa-solid fa-film border bg-danger-subtle text-danger p-3"
-                        ></i>
+                      <div class="icon table-info ">
+                        <i  class="fa-solid fa-film dark-blue"></i>
 
                         <div>
-                          <h6 class="m-0">اشتراك Netflix</h6>
+                          <h6 class="text3">اشتراك Netflix</h6>
 
-                          <small class="text-muted"> اشتراك شهري </small>
+                          <small class="text-muted ligh"> اشتراك شهري </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-primary-subtle text-primary p-2">
-                        <i class="fa-solid fa-tv"></i> ترفيه
+                      <span class="badg dark-blu ">
+                        <i class="fa-solid fa-tv"></i> 
+                        ترفيه
                       </span>
                     </td>
 
                     <td>11 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="fw-bold">-780 جنية</td>
+                    <td class="text4">-780 جنية</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="icon d-flex align-items-center gap-3">
+                      <div class="icon table-info">
                         <i
-                          class="fa-solid fa-dumbbell border p-3 bg-info-subtle text-info"
-                        ></i>
+                          class="fa-solid fa-dumbbell light-blue"></i>
 
                         <div>
-                          <h6 class="m-0">نادي FitLife</h6>
+                          <h6 class="text3">نادي FitLife</h6>
 
-                          <small class="text-muted"> عضوية شهرية </small>
+                          <small class="text-muted ligh"> عضوية شهرية </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-info-subtle text-info p-2">
+                      <span class="badg light-blu">
                         <i class="fa-solid fa-heart-pulse"></i> صحة
                       </span>
                     </td>
@@ -642,33 +634,32 @@
                     <td>10 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="fw-bold">-500 جنية</td>
+                    <td class="text4">-500 جنية</td>
                   </tr>
 
                   <!-- ROW -->
 
                   <tr>
                     <td>
-                      <div class="icon d-flex align-items-center gap-3">
+                      <div class="icon table-info">
                         <i
-                          class="fa-solid fa-graduation-cap border bg-success-subtle text-success p-3"
-                        ></i>
+                          class="fa-solid fa-graduation-cap light-green"></i>
 
                         <div>
-                          <h6 class="m-0">كورس Jonas</h6>
+                          <h6 class="text3">كورس Jonas</h6>
 
-                          <small class="text-muted"> دورة تدريبية </small>
+                          <small class="text-muted ligh"> دورة تدريبية </small>
                         </div>
                       </div>
                     </td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg light-gren">
                         <i class="fa-solid fa-book"></i>تعليم
                       </span>
                     </td>
@@ -676,64 +667,66 @@
                     <td>9 أكتوبر 2025</td>
 
                     <td>
-                      <span class="badge bg-success-subtle text-success p-2">
+                      <span class="badg down">
                         مكتمل
                       </span>
                     </td>
 
-                    <td class="fw-bold">-250 جنية</td>
+                    <td class="text4">-250 جنية</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </div>
+        </div>
       </div>
-
-      <!-- BUDGET SECTION -->
-
+      
+      
+<div class="container">
+  
    <!-- BUDGET SECTION -->
 
-<div class="row  mt-2">
+<div class="budget-section ">
 
   <!-- الميزانية -->
 
-  <div class="col-lg-4">
+  <div class="side-right">
 
-    <div class="bg-white border rounded-4 p-4 shadow-sm">
+    <div class="budget">
 
-      <div class="d-flex justify-content-between align-items-center mb-3">
+      <div class="deteils">
 
-        <h3 class="fw-bold m-0">نظرة عامة على الميزانية</h3>
+        <h3 class=" text2 ">نظرة عامة على الميزانية</h3>
 
-        <a href="#" class="text-decoration-none">
+        <a href="#" class="end two ">
           التفاصيل >
 
         </a>
 
       </div>
 
-      <div class="bg-primary-subtle rounded-4 p-3">
+      <div class="total uq">
 
-        <small class="text-primary">
+        <small class="end text3">
           إجمالي الميزانية
         </small>
 
-        <h2 class="fw-bold text-primary mt-1">
+        <h2 class="coines">
           10000 جنيه
         </h2>
         
         <div class="left">
-  <small class="text-muted ">
+  <small class="text3 light">
     المتبقي
   </small>
   
-  <h4 class="text-success ">
+  <h4 class="gr ">
     1750 جنيه
   </h4>
   
 </div>
-        <div class="d-flex justify-content-between mt-2">
+        <div class="the-end ">
 
           <small>8250 جنيه مستخدم</small>
 
@@ -742,12 +735,10 @@
 
         </div>
 
-        <div class="progress mt-2">
+        <div class="progress">
 
           <div
-            class="progress-bar"
-            style="width:82.5%"
-          ></div>
+            class="progress-bar blue2" style="width:82.5%"></div>
 
         </div>
 
@@ -755,22 +746,20 @@
 
       <!-- كارد 1 -->
 
-      <div class="border rounded-4 p-3 mt-4">
+      <div class="total">
 
-        <div class="d-flex gap-1">
+        <div class=" card-heder ">
 
-           <div
-            class="bg-warning-subtle text-warning rounded-3 p-2 h-50"
-          >
+           <div class="icon1 orange" >
             <i class="fa-solid fa-film"></i>
           </div>
 
-          <div >
+          <div class="text" >
             <h5>ترفيه</h5>
 
           
           
-            <small class="text-muted pt-0">
+            <small class="light text4">
               الميزانية 1500 جنيه
             </small>
           
@@ -782,19 +771,16 @@
         </div>
         
         <div class="left">
-  <h4 class="">750 جنيه</h4>
+  <h4 >750 جنيه</h4>
   
-  <span class="badge bg-success-subtle text-success">
+  <span class="back green2 text4">
     متبقي 50%
   </span>
 </div>
 
-        <div class="progress mt-3">
+        <div class="progress ">
 
-          <div
-            class="progress-bar bg-warning"
-            style="width:50%"
-          ></div>
+          <div class="progress-bar orange2" style="width:50%"></div>
 
         </div>
 
@@ -802,20 +788,19 @@
 
       <!-- كارد 2 -->
 
-      <div class="border rounded-4 p-3 mt-3">
+      <div class=" total">
 
-        <div class="d-flex gap-1">
+        <div class="card-heder ">
 <div
-            class="bg-danger-subtle text-danger rounded-3 p-2 h-50 "
-          >
+            class=" icon1 red2 ">
             <i class="fa-solid fa-file-invoice-dollar"></i>
           </div>
 
           <div>
 
-            <h5>فواتير</h5>
+            <h5 class="text">فواتير</h5>
 
-            <small class="text-muted">
+            <small class="light text4">
               الميزانية 2000 جنيه
             </small>
 
@@ -826,19 +811,17 @@
         </div>
         
         <div class="left">
-  <h4 class="mt-3">2000 جنيه</h4>
+  <h4 >2000 جنيه</h4>
   
-  <span class="badge bg-danger-subtle text-danger">
+  <span class=" back red text4">
     مستخدم 100%
   </span>
 </div>
 
-        <div class="progress mt-3">
+        <div class="progress">
 
           <div
-            class="progress-bar bg-danger"
-            style="width:100%"
-          ></div>
+            class="progress-bar red3" style="width:100%" ></div>
 
         </div>
 
@@ -846,19 +829,17 @@
 
       <!-- كارد 3 -->
 
-      <div class="border rounded-4 p-3 mt-3">
+      <div class=" total">
 
-        <div class="d-flex gap-1">
-  <div
-            class="bg-danger-subtle text-danger rounded-3 p-2 h-50"
-          >
+        <div class=" card-heder">
+  <div class=" icon1 fousia">
             <i class="fa-solid fa-heart"></i>
           </div>
           <div>
 
-            <h5>العناية الشخصية</h5>
+            <h5 class="text">العناية الشخصية</h5>
 
-            <small class="text-muted">
+            <small class="light text4">
               الميزانية 1500 جنيه
             </small>
 
@@ -869,19 +850,17 @@
         </div>
         
         <div class="left">
-  <h4 class="mt-3">1200 جنيه</h4>
+  <h4>1200 جنيه</h4>
   
-  <span class="badge bg-warning-subtle text-warning">
+  <span class=" back brwon">
     متبقي 20%
   </span>
 </div>
 
-        <div class="progress mt-3">
+        <div class="progress ">
 
           <div
-            class="progress-bar bg-danger"
-            style="width:80%"
-          ></div>
+            class="progress-bar fusia" style="width:80%"></div>
 
         </div>
 
@@ -889,19 +868,17 @@
 
       <!-- كارد 4 -->
 
-      <div class="border rounded-4 p-3 mt-3">
+      <div class=" total">
 
-        <div class="d-flex gap-1">
- <div
-            class="bg-success-subtle text-success rounded-3 p-2 h-50"
-          >
+        <div class="card-heder">
+ <div class="icon1 green" >
             <i class="fa-solid fa-cart-shopping"></i>
           </div>
           <div>
 
-            <h5>مستلزمات المنزل</h5>
+            <h5 class="text">مستلزمات المنزل</h5>
 
-            <small class="text-muted">
+            <small class="light text4">
               الميزانية 5000 جنيه
             </small>
 
@@ -912,18 +889,20 @@
         </div>
         
         <div class="left">
-  <h4 class="mt-3">4300 جنيه</h4>
-  
-  <span class="badge bg-success-subtle text-success">
+
+          <h4>4300 جنيه</h4>
+          <span class="back green text4">
     متبقي 14%
   </span>
+  
+  
+  
 </div>
 
-        <div class="progress mt-3">
+        <div class="progress">
 
           <div
-            class="progress-bar bg-success"
-            style="width:86%"
+            class="progress-bar light-gree" style="width:86%"
           ></div>
 
         </div>
@@ -933,44 +912,45 @@
     </div>
 
   </div>
+  
 
   <!-- الجراف + الحساب -->
 
-  <div class="col-lg-4">
+  <div class="expense-card">
 
     <!-- الجراف -->
 
-    <div class="bg-white border rounded-4 p-2 mb-2 ">
+    <div class="card-header  ">
 
-      <div class="d-flex justify-content-between ">
+      <div class="card-title  ">
 
-        <h3 class="fw-bold">
+        <h3 class="text">
           الدخل مقابل المصروفات
         </h3>
 
-        <a href="#" class="text-decoration-none">
+        <a href="#" class="end two">
           التحليل >
         </a>
 
       </div>
 
-      <div class="item mt-3">
-    <div class="d-flex  justify-content-center gap-3">
-      <div class="bg-success p-2 h-50"></div>
+      <!-- <div class="ite mt-3"> -->
+    <div class="item ">
+      <div class="legend-color income-colo "></div>
       <span> الدخل </span>
       
-      <div class="bg-danger p-2 h-50"></div>
+      <div class="legend-color expense-color"></div>
       <span>
         المصروفات</span>
       </div>
-    </div>
+    <!-- </div> -->
     
-    <div class=" chart  d-flex justify-content-center p-5 gap-4 ">
+    <div class=" chart ">
       <div class=" week ">
-<div class="bars d-flex justify-content-center align-items-end gap-1">
+<div class="bars">
 
-  <div class=" bar1 bg-success p-2 rounded-top-1 "></div>
-  <div class=" bar2 bg-danger p-2 rounded-top-1  "></div> 
+  <div class=" bar1"></div>
+  <div class=" bar2 "></div> 
 </div>
 
 <p>الاسبوع 1</p>
@@ -978,10 +958,10 @@
 </div>
 
 <div class=" week ">
-  <div class="bars d-flex justify-content-center align-items-end gap-1 ">
+  <div class="bars ">
     
-    <div class=" bar1 bg-success p-2 rounded-top-1 "></div>
-    <div class=" bar2 bg-danger p-2 rounded-top-1 "></div> 
+    <div class=" bar1  "></div>
+    <div class=" bar2"></div> 
   </div>
   
   <p>الاسبوع 2</p>
@@ -989,10 +969,10 @@
 </div>
 
 <div class=" week ">
-  <div class="bars d-flex justify-content-center align-items-end gap-1 ">
+  <div class="bars  ">
     
-    <div class=" bar1 bg-success p-2 rounded-top-1 "></div>
-    <div class=" bar2 bg-danger p-2 rounded-top-1 "></div> 
+    <div class=" bar1 "></div>
+    <div class=" bar2 "></div> 
   </div>
   
   <p>الاسبوع 3</p>
@@ -1000,10 +980,10 @@
 </div>
 
 <div class=" week ">
-  <div class="bars d-flex justify-content-center align-items-end  gap-1">
+  <div class="bars ">
     
-    <div class=" bar1 bg-success p-2  rounded-top-1"></div>
-    <div class=" bar2 bg-danger p-2 rounded-top-1"></div> 
+    <div class=" bar1"></div>
+    <div class=" bar2 "></div> 
   </div>
   
   <p>الاسبوع 4</p>
@@ -1020,7 +1000,7 @@
 
     <div class="account-card ">
 
-      <div class="account-card bg-white rounded-4 p-3">
+      <div class="account-crd ">
 
       <div class="section-header">
 
@@ -1028,7 +1008,7 @@
           ملخص الحساب
         </h3>
 
-        <a href="#">
+        <a href="#" class="end two">
           التفاصيل
         </a>
 
@@ -1036,11 +1016,11 @@
 
       <!-- ITEM -->
 
-      <div class="account-item bg-light d-flex justify-content-between align-items-center rounded-2 p-2  mb-3">
+      <div class="account-item ">
 
-        <div class="d-flex align-items-center gap-3">
+        <div class="caard ">
 
-          <div class="account-icon   blue-bg  bg-primary-subtle text-primary p-1 rounded-2 ">
+          <div class="account-icon blue ">
 
             <i class="fa-solid fa-building-columns"></i>
 
@@ -1048,11 +1028,11 @@
 
           <div>
 
-            <h5 class="m-0">
+            <h5 class="text">
               حساب جاري
             </h5>
 
-            <small class="text-muted">
+            <small class="text4 light">
              بنك مصر [•••• 4532]
             </small>
 
@@ -1068,23 +1048,23 @@
 
       <!-- ITEM -->
 
-      <div class="account-item bg-light d-flex justify-content-between align-items-center rounded-2 p-2 mb">
+      <div class="account-item ">
 
-        <div class="d-flex align-items-center gap-3">
+        <div class="caard ">
 
-          <div class="account-icon green-bg bg-success-subtle text-success p-1 rounded-2">
+          <div class="account-icon green ">
 
             <i class="fa-solid fa-piggy-bank"></i>
 
           </div>
 
-          <div class="gap-2">
+          <div class="">
 
-            <h5 class="m-0">
+            <h5 class="text">
               حساب التوفير
             </h5>
 
-            <small class="text-muted">
+            <small class="text4 light">
                بنك مصر [•••• 8901]
             </small>
 
@@ -1100,11 +1080,11 @@
 
       <!-- ITEM -->
 
-      <div class="account-item d-flex justify-content-between align-items-center rounded-2 p-2 bg-light">
+      <div class="account-item">
 
-        <div class="d-flex align-items-center gap-3">
+        <div class="caard ">
 
-          <div class="account-icon bg-danger-subtle text-danger">
+          <div class="account-icon purbel">
 
             <i class="fa-solid fa-credit-card"></i>
 
@@ -1112,11 +1092,11 @@
 
           <div >
 
-            <h5 class="m-0">
+            <h5 class="text">
               بطاقة ائتمان
             </h5>
 
-            <small class="text-muted">
+            <small class="text4 light">
               متاح 1850 من 2500
             </small>
 
@@ -1124,7 +1104,7 @@
 
         </div>
 
-        <h4 class="text-danger">
+        <h4 class=" text3 text-red">
           -6000 جنيه
         </h4>
 
@@ -1138,9 +1118,9 @@
 
   <!-- وسائل الدفع -->
 
-  <div class="col-lg-4">
+  <div class="payment">
 
-   <div class="payment-cards border bg-white p-4 rounded-3">
+   <div class="payment-cards">
             <div class="section-header">
               <h3>وسائل الدفع</h3>
 
@@ -1148,36 +1128,36 @@
             </div>
 
 
-<div class="card-wrapper position-relative mb-5 ">
+<div class="card-wrapper">
 
     <div class="card-inner ">
 
         <!-- FRONT -->
-        <div class="card-front position-absolute top-0 start-0 ">
+        <div class="card-front ">
 
-            <div class="card rounded-3 text-white visa-card">
+            <div class="card  visa-card">
 
-                <div class="card-body p-4 position-relative">
+                <div class="card-body">
 
                     <!-- Badge -->
-                    <span class="badge rounded-pill bg-light bg-opacity-25 text-white p-3 position-absolute top-0 start-0 m-3">
+                    <span class="badge ">
                         أساسية
                     </span>
 
                     <!-- Top -->
-                    <div class="d-flex justify-content-between align-items-start mt-3">
+                    <div class="card-top">
                       
-                      <div class="chip bg-light bg-opacity-25 rounded-3 d-flex justify-content-center align-items-center">
-                        <div class="bg-light bg-opacity-50 rounded-2 w-50 h-50 "></div>
+                      <div class="chip ">
+                        <div class="chip-top "></div>
                       </div>
                       
-                      <i class="fa-brands fa-cc-visa fs-1"></i>
+                      <i class="fa-brands fa-cc-visa "></i>
 
                     </div>
 
                     <!-- Number -->
-                    <div class="mt-3">
-                        <div class="fs-1">
+                    <div class="">
+                        <div class="text">
                             •••• •••• ••••
                         </div>
 
@@ -1187,22 +1167,22 @@
                     </div>
 
                     <!-- Footer -->
-                    <div class="d-flex justify-content-between mt-3">
+                    <div class="card-footer ">
 
                         <div class="text-end">
-                            <small class="opacity-75 d-block">
+                            <small class="card-label ">
                                 حامل البطاقة
                             </small>
-                            <h4 class="mb-0 fw-bold">
+                            <h4 class="card-value ">
                                 سيف أسامة
                             </h4>
                         </div>
 
                         <div>
-                            <small class="opacity-75 d-block">
+                            <small class=" card-label ">
                                 تنتهي
                             </small>
-                            <h4 class="mb-0 fw-bold">
+                            <h4 class="card-value ">
                                 12/26
                             </h4>
                         </div>
@@ -1216,36 +1196,36 @@
         </div>
 
         <!-- BACK -->
-       <div class="card-back position-absolute top-0 start-0 ">
+       <div class="card-back ">
 
-            <div class="card border-0 rounded-4 text-white visa-back ">
+            <div class="card visa-back ">
 
-                <div class="card-body p-4 d-flex flex-column">
+                <div class="card-body">
 
-                    <div class="bg-dark rounded mb-3 p-3" ></div>
+                    <div class="magnetic-strip" ></div>
 
-                    <div class="text-end small opacity-75  ">
+                    <div class=" signature-text  ">
                         توقيع معتمد - غير صالحة بدون توقيع
                     </div>
 
-                    <div class="bg-light rounded-3 p-3 mb-2">
+                    <div class="signature-box">
 
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="signature-content">
 
-                          <div class="bg-secondary-subtle rounded" ></div>
-                          <div class="bg-dark-subtle p-1 text-center w-100"></div>
-                            <span class="text-dark fw-bold fs-4">4532</span>
+                          <div class=" signature-left " ></div>
+                          <div class="signature-line "></div>
+                            <span class=" card-number ">4532</span>
 
 
                         </div>
 
                     </div>
 
-                    <div class="foot">
+                    <div class="foot cvv-section">
 
-                        <div class="">CVV</div>
+                        <div class="cvv-label ">CVV</div>
 
-                        <div class=" footr bg-light text-dark rounded-3  d-inline-block p-2 ">
+                        <div class="cvv-number  footr ">
                             123
                         </div>
 
@@ -1263,29 +1243,29 @@
    
 <!-- end -->
 
-<div class="card-wrapper position-relative mb-5 ">
+<div class="card-wrapper">
 
     <div class="card-inner">
 
         <!-- FRONT -->
-        <div class="card-front position-absolute top-0 start-0 ">
+        <div class="card-front ">
 
-            <div class="card rounded-3 text-white visa-card-p p-4">
+            <div class=" card visa-card-p ">
 
                     <!-- Top -->
-                    <div class="d-flex justify-content-between align-items-start mt-3">
+                    <div class="card-top ">
 
-                        <div class="chip bg-light bg-opacity-25 rounded-3 d-flex justify-content-center align-items-center">
-                            <div class="bg-light bg-opacity-50 rounded-2 w-50 h-50"></div>
+                        <div class="chip ">
+                            <div class="chip-top "></div>
                         </div>
 
-                        <i class="fa-brands fa-cc-mastercard fs-1"></i>
+                        <i class="fa-brands fa-cc-mastercard "></i>
 
                     </div>
 
                     <!-- Number -->
-                    <div class="mt-3">
-                        <div class="fs-1">
+                    <div class="">
+                        <div class="text">
                             •••• •••• ••••
                         </div>
 
@@ -1295,22 +1275,22 @@
                     </div>
 
                     <!-- Footer -->
-                    <div class="d-flex justify-content-between mt-3">
+                    <div class="card-footer">
 
                         <div class="text-end">
-                            <small class="opacity-75 d-block">
+                            <small class=" card-label ">
                                 حامل البطاقة
                             </small>
-                            <h4 class="mb-0 fw-bold">
+                            <h4 class="card-value">
                                 سيف أسامة
                             </h4>
                         </div>
 
                         <div>
-                            <small class="opacity-75 d-block">
+                            <small class=" card-label">
                                 تنتهي
                             </small>
-                            <h4 class="mb-0 fw-bold">
+                            <h4 class="card-value">
                                 8/27
                             </h4>
                         </div>
@@ -1322,36 +1302,36 @@
         </div>
 
         <!-- BACK -->
-       <div class="card-back position-absolute top-0 start-0 ">
+       <div class="card-back">
 
-            <div class="card border-0 rounded-4 text-white visa-back ">
+            <div class="card  visa-back ">
 
-                <div class="card-body p-4 d-flex flex-column">
+                <div class="card-body ">
 
-                    <div class="bg-dark rounded mb-3 p-3" ></div>
+                    <div class="magnetic-strip " ></div>
 
-                    <div class="text-end small opacity-75  ">
+                    <div class="signature-text  ">
                         توقيع معتمد - غير صالحة بدون توقيع
                     </div>
 
-                    <div class="bg-light rounded-3 p-3 mb-2">
+                    <div class="signature-box ">
 
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="signature-content ">
 
-                          <div class="bg-secondary-subtle rounded" ></div>
-                          <div class="bg-dark-subtle p-1 text-center w-100"></div>
-                            <span class="text-dark fw-bold fs-4">8901</span>
+                          <div class="signature-left " ></div>
+                          <div class="signature-line "></div>
+                            <span class=" card-number ">8901</span>
 
 
                         </div>
 
                     </div>
 
-                    <div class="foot">
+                    <div class=" cvv-section">
 
-                        <div class="">CVV</div>
+                        <div class="cvv-label">CVV</div>
 
-                        <div class=" footr bg-light text-dark rounded-3  d-inline-block p-2 ">
+                        <div class="  cvv-number ">
                             456
                         </div>
 
@@ -1368,23 +1348,23 @@
 </div>
 <!-- end -->
 
-<div class="card-wrapper position-relative  mb-2">
+<div class="card-wrapper ">
 
     <div class="card-inner">
 
         <!-- FRONT -->
-        <div class="card-front position-absolute top-0 start-0 ">
+        <div class="card-front">
 
-            <div class="card rounded-3 text-white visa-card-b p-4">
+            <div class="card visa-card-b ">
 
                     <!-- Top -->
-                    <div class="d-flex justify-content-between align-items-start mt-3">
+                    <div class="card-top ">
 
-                        <div class="chip bg-light bg-opacity-25 rounded-3 d-flex justify-content-center align-items-center">
-                            <div class="bg-light bg-opacity-50 rounded-2 w-50 h-50"></div>
+                        <div class="chip ">
+                            <div class="chip-top "></div>
                         </div>
 
-                        <i class="fa-brands fa-paypal fs-1"></i>
+                        <i class="fa-brands fa-paypal"></i>
 
                     </div>
 
@@ -1394,19 +1374,19 @@
                     </div>
 
                     <!-- Footer -->
-                    <div class="d-flex justify-content-between mt-3">
+                    <div class="card-footer ">
 
                         <div class="text-end">
-                            <small class="opacity-75 d-block">
+                            <small class="card-label ">
                                 الإيميل
                             </small>
-                            <span class="mb-0 fw-bold">
+                            <span class="card-value">
                                 seif@example.com
                             </span>
                         </div>
 
                         <div>
-                            <small class="opacity-75 d-block">
+                            <small class="card-label ">
                                 الحاله
                             </small>
                             <a href="#" class="text-decoration-none text-success mb-0">
@@ -1421,36 +1401,36 @@
         </div>
 
         <!-- BACK -->
-       <div class="card-back position-absolute top-0 start-0 ">
+       <div class="card-back">
 
-            <div class="card border-0 rounded-4 text-white visa-back ">
+            <div class="card visa-back ">
 
-                <div class="card-body p-4 d-flex flex-column">
+                <div class="card-body ">
 
-                    <div class="bg-dark rounded mb-3 p-3" ></div>
+                    <div class="magnetic-strip" ></div>
 
-                    <div class="text-end small opacity-75  ">
+                    <div class="signature-text ">
                         توقيع معتمد - غير صالحة بدون توقيع
                     </div>
 
-                    <div class="bg-light rounded-3 p-3 mb-2">
+                    <div class="signature-box ">
 
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="signature-content ">
 
-                          <div class="bg-secondary-subtle rounded" ></div>
-                          <div class="bg-dark-subtle p-1 text-center w-100"></div>
-                            <span class="text-dark fw-bold fs-4">8901</span>
+                          <div class="signature-left " ></div>
+                          <div class="signature-line "></div>
+                            <span class="card-number ">8901</span>
 
 
                         </div>
 
                     </div>
 
-                    <div class="foot">
+                    <div class=" cvv-section">
 
-                        <div class="">CVV</div>
+                        <div class="cvv-label">CVV</div>
 
-                        <div class=" footr bg-light text-dark rounded-3  d-inline-block p-2 ">
+                        <div class="  cvv-number">
                             456
                         </div>
 
@@ -1470,8 +1450,9 @@
 
    
 
-    
+    </div>
   </div>
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
